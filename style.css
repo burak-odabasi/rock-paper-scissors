@@ -24,11 +24,11 @@ button {
   display: none;
 }
 
-.game {
+.choices {
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(50%, -45%);
+  transform: translate(50%, -50%);
   border: 10px solid black;
   display: grid;
   font-size: 1.5rem;
@@ -42,12 +42,21 @@ button {
   display: flex;
   font-size: 2rem;
   text-align: center;
-  border: 0px solid black;
+  border: 1rem solid rgb(132, 0, 0);
   justify-content: space-around;
-  padding: 3rem 15rem 0rem;
+  padding: 0rem 15rem;
 }
 
-#alien {
+#score1 {
+  display: grid;
+  border: 3px solid black;
+}
+#score2 {
+  display: grid;
+  border: 3px solid black;
+}
+
+/* #alien {
   position: absolute;
   top: 250px;
   right: 125px;
@@ -58,4 +67,4 @@ button {
   top: 250px;
   left: 125px;
   justify-self: center;
-}
+} */
