@@ -1,0 +1,14 @@
+{
+  "name": "rps-game",
+  "version": "1.0.0",
+  "description": "basic rock paper scissors game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Augustcode99",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

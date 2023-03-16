@@ -1,24 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: consolas; }
+  font-family: consolas;
+}
 
 body {
   height: 100vh;
-  background-color: #24b99e;
-  color: whitesmoke; }
+  background-color: rgb(36, 185, 158);
+  color: whitesmoke;
+}
 
 button {
   padding: 1rem 2rem;
   border-radius: 15px;
-  background-color: #10b7c6;
-  color: white;
+  background-color: rgb(16, 183, 198);
+  color: rgb(255, 255, 255);
   outline: none;
-  border: 2.5px solid white;
-  font-size: 1.5rem; }
+  border: 2.5px solid rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
 
 .start-screen {
-  display: none; }
+  display: none;
+}
 
 .choices {
   position: absolute;
@@ -30,21 +34,24 @@ button {
   font-size: 1.5rem;
   text-align: center;
   padding: 1.5rem 4rem 4rem;
-  background-color: #919191;
-  margin-top: 1.5rem; }
+  background-color: rgb(145, 145, 145);
+  margin-top: 1.5rem;
+}
 
 #score {
   display: flex;
   font-size: 2rem;
   text-align: center;
-  border: 1rem solid #840000;
+  border: 1rem solid rgb(132, 0, 0);
   justify-content: space-around;
-  padding: 0rem 15rem; }
+  padding: 0rem 15rem;
+}
 
 #score1 {
   display: grid;
-  border: 3px solid black; }
-
+  border: 3px solid black;
+}
 #score2 {
   display: grid;
-  border: 3px solid black; }
+  border: 3px solid black;
+}
