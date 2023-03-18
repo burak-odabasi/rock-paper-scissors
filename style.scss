@@ -45,13 +45,13 @@ button {
   border: 1rem solid rgb(132, 0, 0);
   justify-content: space-around;
   padding: 0rem 15rem;
-}
 
-#score1 {
-  display: grid;
-  border: 3px solid black;
-}
-#score2 {
-  display: grid;
-  border: 3px solid black;
+  #score1 {
+    display: grid;
+    border: 3px solid black;
+  }
+  #score2 {
+    display: grid;
+    border: 3px solid black;
+  }
 }
