@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: consolas; }
+  font-family: consolas;
+}
 
 body {
   height: 100vh;
   background-color: #24b99e;
-  color: whitesmoke; }
+  color: whitesmoke;
+}
 
 button {
   padding: 1rem 2rem;
@@ -15,10 +17,12 @@ button {
   color: white;
   outline: none;
   border: 2.5px solid white;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .start-screen {
-  display: none; }
+  display: none;
+}
 
 .choices {
   position: absolute;
@@ -31,7 +35,8 @@ button {
   text-align: center;
   padding: 1.5rem 4rem 4rem;
   background-color: #919191;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+}
 
 #score {
   display: flex;
@@ -39,12 +44,15 @@ button {
   text-align: center;
   border: 1rem solid #840000;
   justify-content: space-around;
-  padding: 0rem 15rem; }
+  padding: 0rem 15rem;
+}
 
 #score1 {
   display: grid;
-  border: 3px solid black; }
+  border: 3px solid black;
+}
 
 #score2 {
   display: grid;
-  border: 3px solid black; }
+  border: 3px solid black;
+}
