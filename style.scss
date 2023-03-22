@@ -7,52 +7,49 @@
 body {
   height: 100vh;
   background-color: rgb(36, 185, 158);
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
+  display: grid;
+  place-items: center;
 }
-
-.start-screen {
-  display: none;
-}
-
 .game {
-  #score {
-    display: flex;
-    font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 60vh;
+  width: 65vw;
+  border: 1rem solid rgb(207, 194, 194);
+  background-color: rgba(255, 255, 255, 0.713);
+  .score {
+    display: grid;
     text-align: center;
-    border: 1rem solid rgb(132, 0, 0);
-    justify-content: space-around;
-    padding: 0rem 15rem;
-
-    #score1 {
-      display: grid;
-      border: 3px solid black;
-    }
-    #score2 {
-      display: grid;
-      border: 3px solid black;
+    font-size: 1.75rem;
+    border: 6px solid black;
+    .scoreTop {
+      height: 40%;
+      width: 100%;
+      border-bottom: 6px solid black;
+      margin: 1rem 0;
     }
   }
   .choices {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    border: 10px solid rgb(0, 0, 0);
     display: grid;
+    justify-content: space-evenly;
     font-size: 1.5rem;
     text-align: center;
-    padding: 1.5rem 4rem 4rem;
-    background-color: rgb(145, 145, 145);
-    margin-top: 1.5rem;
-
+    padding: 1.5rem 4rem 0rem;
+    border: 6px solid black;
+    border-width: 6px 0;
     button {
       padding: 1rem 2rem;
       border-radius: 15px;
       background-color: rgb(16, 183, 198);
       color: rgb(255, 255, 255);
       outline: none;
-      border: 2.5px solid rgb(255, 255, 255);
+      border: 3.5px solid rgb(255, 255, 255);
       font-size: 1.5rem;
     }
   }
 }
+
+// .start-screen {
+//   display: none;
+// }
