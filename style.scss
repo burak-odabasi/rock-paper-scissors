@@ -10,48 +10,49 @@ body {
   color: whitesmoke;
 }
 
-button {
-  padding: 1rem 2rem;
-  border-radius: 15px;
-  background-color: rgb(16, 183, 198);
-  color: rgb(255, 255, 255);
-  outline: none;
-  border: 2.5px solid rgb(255, 255, 255);
-  font-size: 1.5rem;
-}
-
 .start-screen {
   display: none;
 }
 
-.choices {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  border: 10px solid rgb(0, 0, 0);
-  display: grid;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1.5rem 4rem 4rem;
-  background-color: rgb(145, 145, 145);
-  margin-top: 1.5rem;
-}
+.game {
+  #score {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    border: 1rem solid rgb(132, 0, 0);
+    justify-content: space-around;
+    padding: 0rem 15rem;
 
-#score {
-  display: flex;
-  font-size: 2rem;
-  text-align: center;
-  border: 1rem solid rgb(132, 0, 0);
-  justify-content: space-around;
-  padding: 0rem 15rem;
-
-  #score1 {
-    display: grid;
-    border: 3px solid black;
+    #score1 {
+      display: grid;
+      border: 3px solid black;
+    }
+    #score2 {
+      display: grid;
+      border: 3px solid black;
+    }
   }
-  #score2 {
+  .choices {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 10px solid rgb(0, 0, 0);
     display: grid;
-    border: 3px solid black;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem 4rem 4rem;
+    background-color: rgb(145, 145, 145);
+    margin-top: 1.5rem;
+
+    button {
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      background-color: rgb(16, 183, 198);
+      color: rgb(255, 255, 255);
+      outline: none;
+      border: 2.5px solid rgb(255, 255, 255);
+      font-size: 1.5rem;
+    }
   }
 }
