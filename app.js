@@ -1,5 +1,6 @@
 let humanScore = document.querySelector(".human span");
 let alienScore = document.querySelector(".alien span");
+let roundWinner;
 humanScore.innerHTML = 0;
 alienScore = 0;
 
@@ -11,4 +12,7 @@ const givePoint = () => {
   }
 };
 
-givePoint();
+const rockPaperScissors = () => {
+  roundWinner;
+  givePoint();
+};
