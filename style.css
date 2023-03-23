@@ -5,18 +5,18 @@
 
 body {
   height: 100vh;
-  background-color: #24b99e;
-  color: black;
+  background-color: #1d947e;
+  color: white;
   display: grid;
   place-items: center; }
 
 .game {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  height: 60vh;
-  width: 65vw;
-  border: 1rem solid #cfc2c2;
-  background-color: rgba(255, 255, 255, 0.713); }
+  height: 55vh;
+  width: 57vw;
+  border: 1rem solid black;
+  background-color: #086a6d; }
   .game .score {
     display: grid;
     text-align: center;
