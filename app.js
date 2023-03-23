@@ -20,12 +20,7 @@ const determineWinner = () => {
 
 buttonsArray.forEach((button) => {
   button.addEventListener("click", (e) => {
-    // hand = rock;
-    // humanChoice = e.name;
-    // AlienChoice();
-    // rpsAnimation();
-    // determineWinner();
-    // hand = humanChoice;
+    playRound(e);
   });
 });
 
@@ -37,7 +32,13 @@ const givePoint = () => {
   }
 };
 
-const rockPaperScissors = () => {
-  roundWinner;
+const playRound = (e) => {
+  // roundWinner;
+  // hand = rock;
+  // humanChoice = e.name;
+  // AlienChoice();
+  // rpsAnimation();
+  // determineWinner();
+  // hand = humanChoice;
   givePoint();
 };
