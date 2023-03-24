@@ -21,6 +21,27 @@ const rpsAnimation = () => {
   });
 };
 
+const resetChoices = () => {
+  humanHand.src = "./images/human-rock.png";
+  alienHand.src = "./images/alien-rock.png";
+};
+const showChoices = () => {
+  if (humanChoice === "Rock") {
+    humanHand.src = "./images/human-rock.png";
+  } else if (humanChoice === "Paper") {
+    humanHand.src = "./images/human-paper.png";
+  } else {
+    humanHand.src = "./images/human-scissors.png";
+  }
+  if (alienChoice === "Rock") {
+    alienHand.src = "./images/alien-rock.png";
+  } else if (alienChoice === "Paper") {
+    alienHand.src = "./images/alien-paper.png";
+  } else {
+    alienHand.src = "./images/alien-scissors.png";
+  }
+};
+
 //get random alien choice
 const rollAlienChoice = () => {
   const choices = ["Rock", "Paper", "Scissors"];
@@ -75,10 +96,10 @@ const chooseWinner = () => {
 
 //this func is called when human chooses an option
 const playRound = () => {
-  // hand = rock;
+  resetChoices();
   rpsAnimation();
+  showChoices();
   chooseWinner();
-  //hand = humanChoice
 };
 
 //listen to buttons for human choice
