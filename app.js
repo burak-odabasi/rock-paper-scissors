@@ -22,10 +22,12 @@ const rpsAnimation = () => {
 };
 
 const resetChoices = () => {
+  //after
   humanHand.src = "./images/human-rock.png";
   alienHand.src = "./images/alien-rock.png";
 };
 const showChoices = () => {
+  //first change image based on choice
   if (humanChoice === "Rock") {
     humanHand.src = "./images/human-rock.png";
   } else if (humanChoice === "Paper") {
@@ -33,6 +35,7 @@ const showChoices = () => {
   } else {
     humanHand.src = "./images/human-scissors.png";
   }
+  //then change alien image based on random choice
   if (alienChoice === "Rock") {
     alienHand.src = "./images/alien-rock.png";
   } else if (alienChoice === "Paper") {
@@ -98,7 +101,9 @@ const chooseWinner = () => {
 const playRound = () => {
   resetChoices();
   rpsAnimation();
-  showChoices();
+  setTimeout(() => {
+    showChoices();
+  }, 2500);
   chooseWinner();
 };
 
