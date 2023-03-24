@@ -5,10 +5,11 @@ let alienChoice;
 let humanChoice;
 let alienScore = document.querySelector(".alien span");
 let humanScore = document.querySelector(".human span");
-const buttons = document.querySelectorAll(".rps-buttons button");
+let displayedText = document.querySelector("h2");
 const humanHand = document.querySelector(".humanHand");
 const alienHand = document.querySelector(".alienHand");
 const hands = [humanHand, alienHand];
+const buttons = document.querySelectorAll(".rps-buttons button");
 
 //helper functions
 //hand goes up and down 3 times
@@ -23,6 +24,7 @@ const rpsAnimation = () => {
 
 const resetChoices = () => {
   //after
+  displayedText.innerHTML = `Good Luck!`;
   humanHand.src = "./images/human-rock.png";
   alienHand.src = "./images/alien-rock.png";
 };
@@ -56,35 +58,35 @@ const rollAlienChoice = () => {
 //compare alien and human choice
 const compareHands = () => {
   if (alienChoice === humanChoice) {
-    console.log("It's a tie");
+    displayedText.innerHTML = `It's a Tie`;
     return;
   }
   if (humanChoice === "Rock") {
     if (alienChoice === "Paper") {
-      console.log("Alien wins");
+      displayedText.innerHTML = `Alien Wins :(`;
       alienScore.innerHTML = ++aScore;
     } else {
-      console.log("Human wins");
+      displayedText.innerHTML = `You Win!`;
       humanScore.innerHTML = ++hScore;
     }
     return;
   }
   if (humanChoice === "Paper") {
     if (alienChoice === "Scissors") {
-      console.log("Alien wins");
+      displayedText.innerHTML = `Alien Wins :(`;
       alienScore.innerHTML = ++aScore;
     } else {
-      console.log("Human wins");
+      displayedText.innerHTML = `You Win!`;
       humanScore.innerHTML = ++hScore;
     }
     return;
   }
   if (humanChoice === "Scissors") {
     if (alienChoice === "Rock") {
-      console.log("Alien wins");
+      displayedText.innerHTML = `Alien Wins :(`;
       alienScore.innerHTML = ++aScore;
     } else {
-      console.log("Human wins");
+      displayedText.innerHTML = `You Win!`;
       humanScore.innerHTML = ++hScore;
     }
     return;
