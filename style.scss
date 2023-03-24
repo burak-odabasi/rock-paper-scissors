@@ -39,6 +39,7 @@ body {
     border-width: 6px 0;
     button {
       padding: 1rem 2rem;
+      margin-bottom: 2.5rem;
       border-radius: 15px;
       background-color: rgb(16, 183, 198);
       color: rgb(255, 255, 255);
@@ -50,7 +51,7 @@ body {
       }
     }
     .moveHand {
-      position: absolute;
+      position: relative;
       animation-name: upNdown;
       animation-duration: 1s;
       animation-iteration-count: 3;
@@ -63,7 +64,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100% {
     transform: translateY(0);
