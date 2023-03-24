@@ -98,6 +98,7 @@ const chooseWinner = () => {
 };
 
 //this func is called when human chooses an option
+//play animation 2.5 secs before changing image
 const playRound = () => {
   resetChoices();
   rpsAnimation();
@@ -107,10 +108,26 @@ const playRound = () => {
   chooseWinner();
 };
 
+//to prevent spamming buttons
+const disableButtons = () => {
+  buttons.forEach((button) => {
+    button.disabled = true;
+  });
+};
+const enableButtons = () => {
+  buttons.forEach((button) => {
+    button.disabled = false;
+  });
+};
+
 //listen to buttons for human choice
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
     humanChoice = this.innerHTML;
+    disableButtons();
+    setTimeout(() => {
+      enableButtons();
+    }, 3000);
     playRound();
   });
 });
