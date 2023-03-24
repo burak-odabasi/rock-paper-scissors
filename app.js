@@ -6,10 +6,19 @@ let humanChoice;
 let alienScore = document.querySelector(".alien span");
 let humanScore = document.querySelector(".human span");
 const buttons = document.querySelectorAll(".rps-buttons button");
+const humanHand = document.querySelector(".humanHand");
+const alienHand = document.querySelector(".alienHand");
+const hands = [humanHand, alienHand];
 
 //helper functions
+//hand goes up and down 3 times
 const rpsAnimation = () => {
-  //hand goes up and down 3 times
+  hands.forEach((hand) => {
+    hand.classList.add("moveHand");
+    hand.addEventListener("animationend", () => {
+      hand.classList.remove("moveHand");
+    });
+  });
 };
 
 //get random alien choice
