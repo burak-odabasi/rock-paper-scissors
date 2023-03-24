@@ -103,9 +103,11 @@ const playRound = () => {
   resetChoices();
   rpsAnimation();
   setTimeout(() => {
+    chooseWinner();
+  }, 2500);
+  setTimeout(() => {
     showChoices();
   }, 2500);
-  chooseWinner();
 };
 
 //to prevent spamming buttons
