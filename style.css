@@ -36,7 +36,7 @@ body {
     border-width: 6px 0; }
     .game .choices button {
       padding: 1rem 2rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
       border-radius: 15px;
       background-color: #10b7c6;
       color: white;
@@ -45,6 +45,10 @@ body {
       font-size: 1.5rem; }
       .game .choices button:hover {
         cursor: pointer; }
+    .game .choices .hands2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
     .game .choices .moveHand {
       position: relative;
       animation-name: upNdown;
