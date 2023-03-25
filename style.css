@@ -45,6 +45,10 @@ body {
       font-size: 1.5rem; }
       .game .choices button:hover {
         cursor: pointer; }
+    .game .choices .handImages {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
     .game .choices .moveHand {
       position: relative;
       animation-name: upNdown;
